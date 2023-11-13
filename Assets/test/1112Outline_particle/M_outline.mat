@@ -55,9 +55,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Opacity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Strength: 1.5
     m_Colors:
     - _Base: {r: 0, g: 0, b: 0, a: 0}
     - _Direction: {r: 0.12, g: 0.1, b: 0, a: 0}
+    - _Speed: {r: 0.01, g: 0.01, b: 0, a: 0}
   m_BuildTextureStacks: []

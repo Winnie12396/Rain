@@ -12,7 +12,7 @@ Shader "Custom/Glitch" {
         // A range property named "_Amount" with a range of 0-1, set to 0.5
         _Amount ("Amount", Range(0,1)) = 0.5
 
-        _Alpha ("Alpha", Range(0,1)) = 0.9
+        //_Alpha ("Alpha", Range(0,1)) = 0.9
     }
 
     // Declare the subshaders for the shader
@@ -21,18 +21,18 @@ Shader "Custom/Glitch" {
         Tags {"Queue"="Transparent" "IgnoreProjector" = "True" "RenderType"="Transparent"}
         // Set the level of detail for the subshader
         LOD 100
-        ZWrite Off
-        Blend SrcAlpha OneMinusSrcAlpha
-        Cull front
+        //ZWrite Off
+        //Blend SrcAlpha OneMinusSrcAlpha
+        //Cull front
 
         // Declare a pass for the subshader
         Pass {
             // Begin CG code
             CGPROGRAM
             // Include the vertex shader function
-            #pragma vertex vert alpha
+            #pragma vertex vert
             // Include the fragment shader function
-            #pragma fragment frag alpha
+            #pragma fragment frag
             // Include the UnityCG.cginc file for common functions and variables
             #include "UnityCG.cginc"
 
@@ -40,16 +40,12 @@ Shader "Custom/Glitch" {
             struct appdata {
                 float4 vertex : POSITION;
                 float2 uv : TEXCOORD0;
-
-                UNITY_VERTEX_INPUT_INSTANCE_ID //Insert
             };
 
             // Declare a struct for the output data
             struct v2f {
                 float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
-
-                UNITY_VERTEX_OUTPUT_STEREO //Insert
             };
 
             // Declare the sampler2D for the main texture
@@ -68,11 +64,6 @@ Shader "Custom/Glitch" {
             // Define the vertex shader function
             v2f vert (appdata v) {
                 v2f o;
-
-                UNITY_SETUP_INSTANCE_ID(v); //Insert
-                UNITY_INITIALIZE_OUTPUT(v2f, o); //Insert
-                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o); //Insert
-
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 return o;
@@ -103,7 +94,7 @@ Shader "Custom/Glitch" {
 
                 // Apply the color property to the texture
                 color *= _Color;
-                color *= _Alpha;
+                //color *= _Alpha;
 
                 return color;
             }
