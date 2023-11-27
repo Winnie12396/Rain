@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b94794f959481946a2efddc03219988
+guid: c3fc42a7779be264d9a71929d4a0a4da
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: M_edge
-    second: {fileID: 2100000, guid: 79085cc059055c74a9e7278cde175c03, type: 2}
+    second: {fileID: 2100000, guid: 58d9f14c83142fb429cddc666ce6f5a2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
