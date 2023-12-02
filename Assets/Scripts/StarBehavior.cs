@@ -5,36 +5,44 @@ using UnityEngine;
 public class StarBehavior : MonoBehaviour
 {
     public Rigidbody rb;
-    public float initialJumpSpeed = 10;
+    public float initialJumpSpeed = 2;
     public float gravityScale = 3;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Wait(5f));
-        gameObject.SetActive(true);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            Jump();
+        }
+
+
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            RandomRoll();
+        }
     }
 
-    public void Jump(float speed)
+    public void Jump()
     {
-        rb.AddForce(Vector3.up * speed, ForceMode.Impulse);
+        rb.AddForce(Vector3.up * initialJumpSpeed, ForceMode.Impulse);
         // rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
         StartCoroutine(Wait(0.4f));
     }
 
-    public void JumpTwice(float speed1) //, float speed2)
+    /*public void JumpTwice(float speed1) //, float speed2)
     {
         rb.AddForce(Vector3.up * speed1, ForceMode.Impulse);
-        StartCoroutine(Wait(0.3f));
+        StartCoroutine(Wait(1f));
         rb.AddForce(Vector2.up * speed1, ForceMode.Impulse);
         StartCoroutine(Wait(1f));
-    }
+    }*/
 
     public void Fly()
     {
@@ -46,26 +54,18 @@ public class StarBehavior : MonoBehaviour
 
     public void RandomRoll() // to be tested
     {
-        rb.AddForce(new Vector3(Random.Range(0, 5), 0, 3), ForceMode.Impulse);
+        rb.AddForce(new Vector3(Random.Range(-5, 5), 0.1f, Random.Range(-5, 5)), ForceMode.Impulse);
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Light")
-        {
-            Debug.Log("encounter light");
-            JumpTwice(0.5f);
-            StartCoroutine(Wait(1f));
-        }
-        else if (other.tag == "Ground")
-        {
-            //Debug.Log("encounter light");
-            JumpTwice(0.5f);
-            StartCoroutine(Wait(1f));
-        }
-    }
+
 
     IEnumerator Wait(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+
+    }
+
+    IEnumerator FlyUpward(float sec)
     {
         yield return new WaitForSeconds(sec);
 
