@@ -176,6 +176,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &2771198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,6 +475,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &4608068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1472,6 +1474,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &45334931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3484,6 +3487,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &176920525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4736,6 +4740,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!54 &239263113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4964,6 +4969,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &244564226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5276,6 +5282,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &261712689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5606,6 +5613,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &272534680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6167,6 +6175,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &298347000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7949,6 +7958,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &371701011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8336,6 +8346,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &375819805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8755,6 +8766,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &378353844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9374,6 +9386,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &385798844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9672,6 +9685,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &394121972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10075,6 +10089,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &399081940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10610,6 +10625,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &413725920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11209,6 +11225,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &428301513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12762,6 +12779,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &496739088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13434,6 +13452,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &519519427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14106,6 +14125,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &547730929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14951,6 +14971,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!54 &572675000
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15942,6 +15963,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &612883147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16915,6 +16937,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &655653111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17288,7 +17311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &671141020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18757,6 +18780,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &735836041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19495,6 +19519,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &761184788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20159,6 +20184,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &797650441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20880,6 +20906,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &814401451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21257,6 +21284,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &819019648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21555,6 +21583,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &842618986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22724,6 +22753,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &877713461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23175,6 +23205,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &887190538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24589,6 +24620,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &944497166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25722,6 +25754,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &976731509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26400,6 +26433,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1010866372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26682,6 +26716,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1012438700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26996,6 +27031,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1020091077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27942,6 +27978,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1045759602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28751,6 +28788,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1080990420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29318,6 +29356,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1094014770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30503,6 +30542,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &1163408764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30827,6 +30867,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1182857914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31715,6 +31756,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1210751709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32013,6 +32055,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1211889621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32295,6 +32338,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1223277908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32677,6 +32721,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1224974742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33790,6 +33835,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1253892335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34088,6 +34134,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1256644409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35336,6 +35383,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1317675401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35678,7 +35726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1337982063
 Transform:
   m_ObjectHideFlags: 0
@@ -36173,6 +36221,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &1356014054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36479,6 +36528,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1375555031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38605,6 +38655,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1468125276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39045,6 +39096,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1489747019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39438,6 +39490,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1501147449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40063,6 +40116,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1510243411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40361,6 +40415,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1511319995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41006,6 +41061,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1522335695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41562,6 +41618,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1530963687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42113,6 +42170,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1559859294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42711,6 +42769,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1588722212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43009,6 +43068,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1593488630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43386,6 +43446,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1602102251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44094,6 +44155,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1627244774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45400,6 +45462,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1703645342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47913,6 +47976,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1805519484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48211,6 +48275,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1807293519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48493,6 +48558,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1808983175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49189,6 +49255,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &1822876198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49329,6 +49396,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1825673617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50628,6 +50696,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1907405330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50926,6 +50995,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1910172465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51446,6 +51516,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1932009104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51855,6 +51926,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1946169540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52929,6 +53001,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1953366814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53446,6 +53519,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &1969478547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54324,6 +54398,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &1998643560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54638,6 +54713,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &2010597300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55120,6 +55196,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &2025227169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55497,6 +55574,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &2031396229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55961,6 +56039,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!65 &2042471243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56262,6 +56341,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &2060492526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56776,6 +56856,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &2084573465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57058,6 +57139,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &2103167719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57451,6 +57533,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   initialJumpSpeed: 10
   gravityScale: 3
+  activeState: 0
 --- !u!114 &2110636094
 MonoBehaviour:
   m_ObjectHideFlags: 0

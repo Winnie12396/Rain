@@ -5,19 +5,22 @@ using UnityEngine;
 public class StarBehavior : MonoBehaviour
 {
     public Rigidbody rb;
-    public float initialJumpSpeed = 2;
+    public float initialJumpSpeed = 5;
     public float gravityScale = 3;
+    public bool activeState = false;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        activeState = true;
+        StartCoroutine(CountDown());
+        StartCoroutine(JumpControl());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        /*if (Input.GetKeyUp(KeyCode.Space))
         {
             Jump();
         }
@@ -26,14 +29,18 @@ public class StarBehavior : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
             RandomRoll();
-        }
+        }*/
     }
 
     public void Jump()
     {
-        rb.AddForce(Vector3.up * initialJumpSpeed, ForceMode.Impulse);
+        rb.AddForce(Vector3.up * Random.Range(1, 5), ForceMode.Impulse);
         // rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
-        StartCoroutine(Wait(0.4f));
+        //StartCoroutine(Wait(Random.Range(3, 10)));
+        /*if (activeState)
+        {
+            Jump();
+        }*/
     }
 
     /*public void JumpTwice(float speed1) //, float speed2)
@@ -65,10 +72,26 @@ public class StarBehavior : MonoBehaviour
 
     }
 
-    IEnumerator FlyUpward(float sec)
+    IEnumerator CountDown()
     {
-        yield return new WaitForSeconds(sec);
+        yield return new WaitForSeconds(90f);
+        activeState = false;
 
     }
+
+    IEnumerator JumpControl()
+    {
+        yield return new WaitForSeconds(Random.Range(1, 9));
+        if (activeState)
+        {
+            Jump();
+        }
+        else
+        {
+            yield break;
+        }
+
+    }
+
 
 }
