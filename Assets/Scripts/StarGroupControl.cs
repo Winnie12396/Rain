@@ -9,17 +9,17 @@ public class StarGroupControl : MonoBehaviour
     bool movingUp = false;
     private Vector3 target;
     // Adjust the speed for the application.
-    public float speed = 0.4f;
+    public float speed = 0.3f;
 
     // Start is called before the first frame update
     void Start()
     {
+        movingUp = false;
         target = new Vector3(0.0f, 62f, 0.0f);
         visibleGroup.SetActive(true);
         hiddenGroup.SetActive(false);
-        StartCoroutine(Wait(3f));   //Wait(215f)
-        hiddenGroup.SetActive(true);
-        movingUp = true;
+        StartCoroutine(Wait(220f));   //Wait(215f)
+
     }
 
     // Update is called once per frame
@@ -37,5 +37,7 @@ public class StarGroupControl : MonoBehaviour
     IEnumerator Wait(float sec)
     {
         yield return new WaitForSeconds(sec);
+        hiddenGroup.SetActive(true);
+        movingUp = true;
     }
 }
