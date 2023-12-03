@@ -9,7 +9,7 @@ public class SoundController : MonoBehaviour
 
     void Start()
     {
-        BGM.gameObject.SetActive(false);
+        BGM.gameObject.SetActive(true);
         spChildren.gameObject.SetActive(false);
         spFirework.gameObject.SetActive(false);
         spMachine.gameObject.SetActive(false);
@@ -17,8 +17,17 @@ public class SoundController : MonoBehaviour
 
     public void PressedStart()
     {
-        BGM.gameObject.SetActive(true);
+        BGM.Play();
         StartCoroutine(PlaySound());
+    }
+
+    public void SoundReset()
+    {
+        BGM.Stop();
+        StopAllCoroutines();
+        spChildren.gameObject.SetActive(false);
+        spFirework.gameObject.SetActive(false);
+        spMachine.gameObject.SetActive(false);
     }
 
     IEnumerator PlaySound()
