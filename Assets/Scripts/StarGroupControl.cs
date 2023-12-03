@@ -33,6 +33,14 @@ public class StarGroupControl : MonoBehaviour
         }
     }
 
+    public void ResetStars()
+    {
+        movingUp = false;
+        transform.position = new Vector3(0, 0, 0);
+        visibleGroup.SetActive(true);
+        hiddenGroup.SetActive(false);
+    }
+
 
     IEnumerator Wait(float sec)
     {
