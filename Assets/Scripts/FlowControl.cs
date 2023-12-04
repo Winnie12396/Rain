@@ -13,6 +13,11 @@ public class FlowControl : MonoBehaviour
     public StarGroupControl starsCtrl;
     public GameObject camRig;
     public Animator camAnim;
+
+    public GameObject VRcam;
+    public GameObject mainCam;
+    public GameObject normalCam;
+
     //public Canvas canvas;
     public GameObject canvas;
     public GameObject start;
@@ -26,6 +31,8 @@ public class FlowControl : MonoBehaviour
 
     void Start()
     {
+        VRcam.SetActive(false);
+        normalCam.SetActive(true);
         canvas.SetActive(true);
         video.SetActive(true);
         start.SetActive(false);
@@ -68,15 +75,20 @@ public class FlowControl : MonoBehaviour
 
     public void StartGame()
     {
+        camRig.transform.position = new Vector3(-49.9f, 0f, 34.8f);
         gameStarted = true;
         video.SetActive(false);
         canvas.SetActive(false);
+        normalCam.SetActive(false);
+        VRcam.SetActive(true);
+        StartCoroutine(Wait(2f));
         camAnim.enabled = true;
         soundCtrl.PressedStart();
         //StartCoroutine(Wait(3f));
         //camAnim.Play("camMoveAlongRoute");
-        
+
         //camAnim.Play("camMoveAlongRoute", -1, 0f);
+
     }
 
     public void StartWalking()  //after footprint
@@ -87,12 +99,18 @@ public class FlowControl : MonoBehaviour
     public void ResetGame()
     {
         gameStarted = false;
-        camAnim.StopPlayback();
+        //camAnim.StopPlayback();
         camAnim.enabled = false;
         starsCtrl.ResetStars();
         soundCtrl.ResetSound();
         canvas.SetActive(true);
         video.SetActive(true);
+        camRig.transform.position = new Vector3(-49.9f, 0f, 34.8f);
+        
+        VRcam.SetActive(false);
+        mainCam.transform.localPosition = new Vector3(0, 0, 0);
+
+        normalCam.SetActive(true);
     }
 
     public void PauseGame()

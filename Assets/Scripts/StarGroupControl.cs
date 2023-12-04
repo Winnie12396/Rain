@@ -18,7 +18,7 @@ public class StarGroupControl : MonoBehaviour
         target = new Vector3(0.0f, 62f, 0.0f);
         visibleGroup.SetActive(true);
         hiddenGroup.SetActive(false);
-        StartCoroutine(Wait(220f));   //Wait(215f)
+        //StartCoroutine(Wait(220f));   //Wait(215f)
 
     }
 
@@ -41,11 +41,16 @@ public class StarGroupControl : MonoBehaviour
         hiddenGroup.SetActive(false);
     }
 
+    public void RiseStars()
+    {
+        movingUp = true;
+    }
 
-    IEnumerator Wait(float sec)
+
+    /*IEnumerator Wait(float sec)
     {
         yield return new WaitForSeconds(sec);
         hiddenGroup.SetActive(true);
         movingUp = true;
-    }
+    }*/
 }
