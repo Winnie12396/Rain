@@ -72,6 +72,7 @@ public class FlowControl : MonoBehaviour
         video.SetActive(false);
         canvas.SetActive(false);
         camAnim.enabled = true;
+        soundCtrl.PressedStart();
         //StartCoroutine(Wait(3f));
         //camAnim.Play("camMoveAlongRoute");
         
@@ -98,6 +99,7 @@ public class FlowControl : MonoBehaviour
     {
         canvas.SetActive(true);
         paused.SetActive(true);
+        soundCtrl.PauseSound();
         camAnim.speed = 0;
 
     }
@@ -105,6 +107,7 @@ public class FlowControl : MonoBehaviour
     public void ResumeGame()
     {
         canvas.SetActive(false);
+        soundCtrl.ResumeSound();
         camAnim.speed = 1;
     }
 

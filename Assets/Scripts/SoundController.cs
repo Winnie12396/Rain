@@ -18,7 +18,60 @@ public class SoundController : MonoBehaviour
     public void PressedStart()
     {
         BGM.Play();
-        StartCoroutine(PlaySound());
+        //StartCoroutine(PlaySound());
+    }
+
+    public void PlaySpatial(string item)
+    {
+        switch (item)
+        {
+            case "machine":
+                spMachine.gameObject.SetActive(true);
+                break;
+            case "firework":
+                spFirework.gameObject.SetActive(true);
+                break;
+            case "children":
+                spChildren.gameObject.SetActive(true);
+                break;
+            default: 
+                break;
+        }
+
+    }
+
+    public void PauseSound()
+    {
+        BGM.Pause();
+        if (spMachine.isActiveAndEnabled)
+        {
+            spMachine.Pause();
+        }
+        if (spFirework.isActiveAndEnabled)
+        {
+            spFirework.Pause();
+        }
+        if (spChildren.isActiveAndEnabled)
+        {
+            spChildren.Pause();
+        }
+    }
+
+    public void ResumeSound()
+    {
+        BGM.UnPause();
+        if (spMachine.isActiveAndEnabled)
+        {
+            spMachine.UnPause();
+        }
+        if (spFirework.isActiveAndEnabled)
+        {
+            spFirework.UnPause();
+        }
+        if (spChildren.isActiveAndEnabled)
+        {
+            spChildren.UnPause();
+        }
     }
 
     public void ResetSound()

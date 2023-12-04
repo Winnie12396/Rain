@@ -5218,7 +5218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &253172948
 Transform:
   m_ObjectHideFlags: 0
@@ -27326,7 +27326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1010669501
 Transform:
   m_ObjectHideFlags: 0
@@ -28431,7 +28431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1039634927
 Transform:
   m_ObjectHideFlags: 0
@@ -28459,7 +28459,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 5476357063289780593, guid: 518857760a2a23d498427ed78f7a4954,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 31b8e1b2bd18af649afb87298c45ee2e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -31522,6 +31522,7 @@ GameObject:
   - component: {fileID: 1161086714}
   - component: {fileID: 1161086713}
   - component: {fileID: 1161086715}
+  - component: {fileID: 1161086716}
   m_Layer: 0
   m_Name: Rig
   m_TagString: Untagged
@@ -31580,6 +31581,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 427856556}
+--- !u!114 &1161086716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161086712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0df4983e9ddd014ea40e42e4d9a9877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundCtrl: {fileID: 949763787}
 --- !u!1 &1163408760
 GameObject:
   m_ObjectHideFlags: 0
@@ -52145,7 +52159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1904300353
 Transform:
   m_ObjectHideFlags: 0
