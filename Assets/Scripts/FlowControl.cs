@@ -12,7 +12,7 @@ public class FlowControl : MonoBehaviour
     public SoundController soundCtrl;
     public StarGroupControl starsCtrl;
     public GameObject camRig;
-    public Animation camAnim;   //this doesn't work
+    public Animator camAnim;
     //public Canvas canvas;
     public GameObject canvas;
     public GameObject start;
@@ -29,8 +29,12 @@ public class FlowControl : MonoBehaviour
         canvas.SetActive(true);
         video.SetActive(true);
         start.SetActive(false);
+        //start.SetActive(true);
         paused.SetActive(false);
-        camAnim = camRig.GetComponent<Animation>();
+        //camAnim = camRig.GetComponent<Animator>();
+        camAnim.keepAnimatorStateOnDisable = false;
+        camAnim.enabled = false;
+        gameStarted = false;
         ResetGame();
     }
 
@@ -39,15 +43,25 @@ public class FlowControl : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //Debug.Log("pressed left");
             if (gameStarted) {
                 PauseGame();
+            }
+            else
+            {
+                StartGame();
             }
             
         }
 
         if (Input.GetMouseButtonDown(1))
         {
-            ResetGame();
+            //Debug.Log("pressed right");
+            if (gameStarted)
+            {
+                ResetGame();
+            }
+            
         }
             
     }
@@ -55,19 +69,27 @@ public class FlowControl : MonoBehaviour
     public void StartGame()
     {
         gameStarted = true;
+        video.SetActive(false);
         canvas.SetActive(false);
+        camAnim.enabled = true;
+        //StartCoroutine(Wait(3f));
+        //camAnim.Play("camMoveAlongRoute");
+        
+        //camAnim.Play("camMoveAlongRoute", -1, 0f);
     }
 
     public void StartWalking()  //after footprint
     {
-        camAnim.Play();
+        camAnim.Play("camMoveAlongRoute", -1, 0f);
     }
 
     public void ResetGame()
     {
-        camAnim.Stop();
-        starsCtrl.ResetStars();
         gameStarted = false;
+        camAnim.StopPlayback();
+        camAnim.enabled = false;
+        starsCtrl.ResetStars();
+        soundCtrl.ResetSound();
         canvas.SetActive(true);
         video.SetActive(true);
     }
@@ -76,15 +98,20 @@ public class FlowControl : MonoBehaviour
     {
         canvas.SetActive(true);
         paused.SetActive(true);
-        camAnim.enabled = false;
+        camAnim.speed = 0;
 
     }
 
     public void ResumeGame()
     {
         canvas.SetActive(false);
-        camAnim.enabled = true;
+        camAnim.speed = 1;
     }
 
+    IEnumerator Wait(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+
+    }
 
 }

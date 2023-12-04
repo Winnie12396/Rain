@@ -21,7 +21,7 @@ public class SoundController : MonoBehaviour
         StartCoroutine(PlaySound());
     }
 
-    public void SoundReset()
+    public void ResetSound()
     {
         BGM.Stop();
         StopAllCoroutines();
@@ -29,6 +29,9 @@ public class SoundController : MonoBehaviour
         spFirework.gameObject.SetActive(false);
         spMachine.gameObject.SetActive(false);
     }
+
+    // pause coroutine & pause sound?
+
 
     IEnumerator PlaySound()
     {
