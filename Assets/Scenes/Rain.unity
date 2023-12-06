@@ -4460,7 +4460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &207895414
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5218,7 +5218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &253172948
 Transform:
   m_ObjectHideFlags: 0
@@ -5255,7 +5255,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 5.1
   MaxDistance: 40
   Pan2D: 0
   rolloffMode: 0
@@ -21194,7 +21194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &802950874
 Transform:
   m_ObjectHideFlags: 0
@@ -27329,7 +27329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1010669501
 Transform:
   m_ObjectHideFlags: 0
@@ -27366,7 +27366,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 9.9
   MaxDistance: 20.6
   Pan2D: 0
   rolloffMode: 0
@@ -52163,7 +52163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1904300353
 Transform:
   m_ObjectHideFlags: 0
@@ -52200,7 +52200,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 56.85
   MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0

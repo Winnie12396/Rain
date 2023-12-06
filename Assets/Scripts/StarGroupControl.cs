@@ -15,7 +15,7 @@ public class StarGroupControl : MonoBehaviour
     void Start()
     {
         movingUp = false;
-        target = new Vector3(0.0f, 62f, 0.0f);
+        target = new Vector3(0.0f, 99f, 0.0f);
         visibleGroup.SetActive(true);
         hiddenGroup.SetActive(false);
         //StartCoroutine(Wait(220f));   //Wait(215f)
