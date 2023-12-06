@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 
 public class FlowControl : MonoBehaviour
@@ -24,6 +25,7 @@ public class FlowControl : MonoBehaviour
     public GameObject paused;
     public GameObject video;
     public bool gameStarted = false;
+
 
 
     // stop game is written in the rig's animation event
@@ -63,12 +65,8 @@ public class FlowControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            //Debug.Log("pressed right");
-            if (gameStarted)
-            {
-                ResetGame();
-            }
             
+            EndGame();
         }
             
     }
@@ -79,8 +77,10 @@ public class FlowControl : MonoBehaviour
         gameStarted = true;
         video.SetActive(false);
         canvas.SetActive(false);
+
         normalCam.SetActive(false);
         VRcam.SetActive(true);
+
         StartCoroutine(Wait(2f));
         camAnim.enabled = true;
         soundCtrl.PressedStart();
@@ -106,11 +106,20 @@ public class FlowControl : MonoBehaviour
         canvas.SetActive(true);
         video.SetActive(true);
         camRig.transform.position = new Vector3(-49.9f, 0f, 34.8f);
-        
         VRcam.SetActive(false);
         mainCam.transform.localPosition = new Vector3(0, 0, 0);
 
         normalCam.SetActive(true);
+        
+
+    }
+
+
+    public void EndGame()
+    {
+        gameStarted = false;
+        SceneManager.LoadScene("Rain");
+
     }
 
     public void PauseGame()

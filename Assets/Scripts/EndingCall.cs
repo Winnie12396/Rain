@@ -8,7 +8,8 @@ public class EndingCall : MonoBehaviour
 
     public void EndGame()
     {
-        manager.ResetGame();
+        //manager.ResetGame();
+        manager.gameStarted = false;
     }
 
 }
