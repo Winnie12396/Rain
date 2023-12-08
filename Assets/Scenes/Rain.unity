@@ -4460,7 +4460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &207895414
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25767,9 +25767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BGM: {fileID: 1039634928}
-  spMachine: {fileID: 1010669502}
-  spFirework: {fileID: 1904300354}
-  spChildren: {fileID: 253172949}
+  spatials: []
 --- !u!1 &949798273
 GameObject:
   m_ObjectHideFlags: 0

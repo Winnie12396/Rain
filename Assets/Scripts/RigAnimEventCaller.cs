@@ -13,9 +13,9 @@ public class RigAnimEventCaller : MonoBehaviour
         
     }
 
-    public void PlaySound(string item)
+    public void PlaySound()
     {
-        soundCtrl.PlaySpatial(item);
+        soundCtrl.PlaySpatial();
     }
 
     public void StarsFly()
