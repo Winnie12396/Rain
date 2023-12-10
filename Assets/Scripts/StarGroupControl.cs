@@ -6,6 +6,7 @@ public class StarGroupControl : MonoBehaviour
 {
     public GameObject visibleGroup;
     public GameObject hiddenGroup;
+    public GameObject group2;
     bool movingUp = false;
     private Vector3 target;
     // Adjust the speed for the application.
@@ -18,6 +19,7 @@ public class StarGroupControl : MonoBehaviour
         target = new Vector3(0.0f, 99f, 0.0f);
         visibleGroup.SetActive(true);
         hiddenGroup.SetActive(false);
+        group2.SetActive(false);
         //StartCoroutine(Wait(220f));   //Wait(215f)
 
     }
@@ -44,6 +46,7 @@ public class StarGroupControl : MonoBehaviour
     public void RiseStars()
     {
         movingUp = true;
+        group2.SetActive(true);
     }
 
 
