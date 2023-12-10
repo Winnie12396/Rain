@@ -26,7 +26,7 @@ public class FlowControl : MonoBehaviour
     public GameObject starGroup1, starGroup2, cityGroup;
     public bool gameStarted = false;
 
-    public FadeScreen fade;
+    //public FadeScreen fade;
 
 
 
@@ -120,13 +120,15 @@ public class FlowControl : MonoBehaviour
 
     public void EndGame()
     {
-        gameStarted = false;
-        fade.FadeOut();
+        
+        //fade.FadeOut();
         starGroup1.SetActive(false);
         starGroup2.SetActive(false);
         cityGroup.SetActive(false);
         endCanvas.SetActive(true);
-        fade.FadeIn();
+        StartCoroutine(Wait(1f));
+        //fade.FadeIn();
+        gameStarted = false;
     }
 
     public void PauseGame()
