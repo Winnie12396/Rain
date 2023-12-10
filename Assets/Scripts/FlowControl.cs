@@ -19,12 +19,14 @@ public class FlowControl : MonoBehaviour
     public GameObject mainCam;
     public GameObject normalCam;
 
-    //public Canvas canvas;
-    public GameObject canvas;
+    public GameObject canvas, endCanvas;
     public GameObject start;
     public GameObject paused;
     public GameObject video;
+    public GameObject starGroup1, starGroup2, cityGroup;
     public bool gameStarted = false;
+
+    public FadeScreen fade;
 
 
 
@@ -36,6 +38,7 @@ public class FlowControl : MonoBehaviour
         VRcam.SetActive(false);
         normalCam.SetActive(true);
         canvas.SetActive(true);
+        endCanvas.SetActive(false);
         video.SetActive(true);
         start.SetActive(false);
         //start.SetActive(true);
@@ -56,7 +59,7 @@ public class FlowControl : MonoBehaviour
             if (gameStarted) {
                 PauseGame();
             }
-            else
+            else  // add start walking?
             {
                 StartGame();
             }
@@ -66,7 +69,7 @@ public class FlowControl : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             
-            EndGame();
+            PressEndGame();
         }
             
     }
@@ -80,21 +83,14 @@ public class FlowControl : MonoBehaviour
 
         normalCam.SetActive(false);
         VRcam.SetActive(true);
+        fade.FadeIn();
 
         StartCoroutine(Wait(2f));
         camAnim.enabled = true;
         soundCtrl.PressedStart();
-        //StartCoroutine(Wait(3f));
-        //camAnim.Play("camMoveAlongRoute");
-
-        //camAnim.Play("camMoveAlongRoute", -1, 0f);
 
     }
 
-    public void StartWalking()  //after footprint
-    {
-        camAnim.Play("camMoveAlongRoute", -1, 0f);
-    }
 
     public void ResetGame()
     {
@@ -115,11 +111,22 @@ public class FlowControl : MonoBehaviour
     }
 
 
-    public void EndGame()
+    public void PressEndGame()
     {
         gameStarted = false;
         SceneManager.LoadScene("Rain");
 
+    }
+
+    public void EndGame()
+    {
+        gameStarted = false;
+        fade.FadeOut();
+        starGroup1.SetActive(false);
+        starGroup2.SetActive(false);
+        cityGroup.SetActive(false);
+        endCanvas.SetActive(true);
+        fade.FadeIn();
     }
 
     public void PauseGame()
