@@ -558,7 +558,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 62
+  - time: 62.833332
     functionName: PlaySound
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -580,7 +580,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 78.166664
-    functionName: 
+    functionName: PlaySound
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

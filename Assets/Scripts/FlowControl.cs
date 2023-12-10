@@ -83,7 +83,7 @@ public class FlowControl : MonoBehaviour
 
         normalCam.SetActive(false);
         VRcam.SetActive(true);
-        fade.FadeIn();
+        //fade.FadeIn();
 
         StartCoroutine(Wait(2f));
         camAnim.enabled = true;
