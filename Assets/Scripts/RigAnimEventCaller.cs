@@ -6,8 +6,12 @@ public class RigAnimEventCaller : MonoBehaviour
 {
     public SoundController soundCtrl;
     public StarGroupControl starCtrl;
-    public FlowControl flowCtrl;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
     public void PlaySound()
     {
@@ -17,12 +21,6 @@ public class RigAnimEventCaller : MonoBehaviour
     public void StarsFly()
     {
         starCtrl.RiseStars();
-    }
-
-    public void EndingCall()
-    {
-        flowCtrl.EndGame();
-
     }
 
 }
