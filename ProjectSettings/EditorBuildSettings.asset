@@ -5,12 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Rain.unity
-    guid: 598bf3ca43587c34fb775f3844c589eb
+    path: Assets/Scenes/Rain_Oculus.unity
+    guid: 234fb5cedd5987741b9a317e54fa703c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a5bd8b7cda93e9f4fb132ecba10b0c7d,
       type: 2}
