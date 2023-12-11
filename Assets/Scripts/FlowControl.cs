@@ -9,7 +9,6 @@ using UnityEngine.SceneManagement;
 public class FlowControl : MonoBehaviour
 {
 
-    public VideoPlayer vid;
     public SoundController soundCtrl;
     public StarGroupControl starsCtrl;
     public GameObject camRig;
@@ -22,7 +21,6 @@ public class FlowControl : MonoBehaviour
     public GameObject canvas, endCanvas;
     public GameObject start;
     public GameObject paused;
-    public GameObject video;
     public GameObject starGroup1, starGroup2, cityGroup;
     public bool gameStarted = false;
 
@@ -39,15 +37,13 @@ public class FlowControl : MonoBehaviour
         normalCam.SetActive(true);
         canvas.SetActive(true);
         endCanvas.SetActive(false);
-        video.SetActive(true);
-        start.SetActive(false);
-        //start.SetActive(true);
+        start.SetActive(true);
         paused.SetActive(false);
         //camAnim = camRig.GetComponent<Animator>();
         camAnim.keepAnimatorStateOnDisable = false;
         camAnim.enabled = false;
         gameStarted = false;
-        ResetGame();
+        //ResetGame();
     }
 
     // Update is called once per frame
@@ -78,7 +74,6 @@ public class FlowControl : MonoBehaviour
     {
         camRig.transform.position = new Vector3(-49.9f, 0f, 34.8f);
         gameStarted = true;
-        video.SetActive(false);
         canvas.SetActive(false);
 
         normalCam.SetActive(false);
@@ -100,7 +95,6 @@ public class FlowControl : MonoBehaviour
         starsCtrl.ResetStars();
         soundCtrl.ResetSound();
         canvas.SetActive(true);
-        video.SetActive(true);
         camRig.transform.position = new Vector3(-49.9f, 0f, 34.8f);
         VRcam.SetActive(false);
         mainCam.transform.localPosition = new Vector3(0, 0, 0);
